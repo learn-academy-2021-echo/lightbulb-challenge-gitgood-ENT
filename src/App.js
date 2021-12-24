@@ -30,6 +30,7 @@ class App extends Component{
   render(){
     return(
       <>
+      <h1>Lightbulbs?!</h1>
       <button id='onOff' style={{backgroundColor: this.state.lightColor}} onClick={this.toggle}>
         {this.state.status}
       </button>
