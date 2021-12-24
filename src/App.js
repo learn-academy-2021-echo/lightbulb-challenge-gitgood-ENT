@@ -5,33 +5,34 @@ class App extends Component{
   constructor(props){
     super(props)
     this.state = {
-      status: false
+      status: 'off',
+      lightColor: 'white',
     }
   }
 
   toggle = () => {
-    this.setState(this.status === true ? this.status = false : this.status = true)
-  }
+    this.setState({
+      status:
+        this.state.status === 'off' ? // if it is off
+          (this.state.status = 'on') : // turn it on
+          (this.state.status = 'off'), // else turn it off
+      lightColor:
+        this.state.status === 'off' ? // same logic as above but controlling color
+          (this.state.lightColor = 'white') :
+          (this.state.lightColor = 'yellow')
+        });
+  };
+
+ 
 
   
 
   render(){
-
-    let switchStyles = {
-      border: "2px solid black",
-      width: "70px",
-      height: "140px",
-      margin: "10px",
-      padding: "10px"
-    }
-
-
     return(
       <>
-      <button style={switchStyles} onClick={this.toggle}>
-        on/off
+      <button id='onOff' style={{backgroundColor: this.state.lightColor}} onClick={this.toggle}>
+        {this.state.status}
       </button>
-        <h1>Hello World!</h1>
       </>
     )
   }
