@@ -1,8 +1,35 @@
-#onOff {
+#OnOff {
   padding: 100px;
-  border-width: 2px;
-  border-color: black;
   margin: 15px;
-  color: blue;
   text-align: justify;
+}
+
+img {
+  color: yellow;
+  max-width: 200px;
+ 
+}
+
+#lights {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+h1 {
+  margin: 15px;
+  text-align: center;
+}
+#cent {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+#switch {
+  min-width: 200px;
+  max-width: 400px;
+  border: none;
+  background-color: white;
 }
