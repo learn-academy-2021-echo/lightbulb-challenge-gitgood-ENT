@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import './App.css'
-import LightBox from './components/LightBox'
-import LightSwitch from "./components/LightSwitch";
+import AddRemove from "./components/AddRemove";
 
 
 
@@ -9,9 +8,10 @@ export default class App extends Component {
   render() {
     return (
       <>
-      <h1>Lightbulbs?!</h1>
+      <h1 id='header'>Lightbulbs?!</h1>
+      
       <div id='lights'>
-        <LightSwitch />
+        <AddRemove />   
        
         
       </div>
