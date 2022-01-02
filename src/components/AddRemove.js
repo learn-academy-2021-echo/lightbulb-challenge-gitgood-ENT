@@ -41,7 +41,7 @@ export default class AddRemove extends Component {
                     
                 </div>
                 <div id='display'>{this.state.array.map(value=><h1><LightSwitch /></h1>)}</div>
-            </>
+            </>//map over the array and turn each value in the array into a lightswitch/bulb
         )
     }
 }
