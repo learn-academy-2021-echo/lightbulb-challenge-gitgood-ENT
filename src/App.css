@@ -11,20 +11,22 @@ img {
 }
 
 #lights {
-  flex-wrap: wrap;
+  margin: 25px;
   justify-content: center;
-  align-content: center;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-h1 {
+#header {
+  font-size: 54px;
   margin: 15px;
   text-align: center;
 }
 #cent {
-  flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
-  text-align: center;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
 }
 
 #switch {
@@ -32,4 +34,23 @@ h1 {
   max-width: 400px;
   border: none;
   background-color: white;
+}
+
+#buttons {
+  margin: 15px;
+  text-align: center;
+}
+button {
+  margin: 25px;
+  padding: 15px;
+}
+
+body {
+  background-color: violet;
+}
+
+#display {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
 }

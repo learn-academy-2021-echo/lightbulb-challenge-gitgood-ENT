@@ -39,14 +39,12 @@ class LightSwitch extends Component{
 
   render(){
     return(
-      <>
       <div id='cent'>
 
       <button id='switch'><img src={this.state.switch} onClick={this.lightToggle}/></button>
       
       {this.state.light}
       </div>
-      </>
     )
   }
 }
